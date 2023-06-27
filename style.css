@@ -1,0 +1,182 @@
+
+@media screen and (max-width: 480px){
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: url(images/Background.png);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    width: 430px;
+    height: 932px;
+    align-content: center;
+}
+
+h2{
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 3.6306rem;
+    color: #540505;
+    -webkit-text-stroke : 1px #000000;
+    margin: 0;
+    margin-top: 7.75rem;
+    margin-left: 9.1875rem;
+}
+
+h3{
+    color: #540505;
+    font-size: 8rem;
+    -webkit-text-stroke : 1px #000000;
+    font-weight: 600;
+    margin-left: 6.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4{
+    display: flex;
+    width: 307px;
+    height: 74px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #870D0D;
+    text-align: center;
+    text-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 2.5rem;
+    margin-left: 3.875rem;
+}
+
+#orage{
+    margin-top: 0.8125rem;
+    margin-left: 8.0625rem;
+}
+
+
+#flash{
+    width: 348px;
+    height: 169px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.8575rem;
+    margin-left: 42px;
+    border-radius: 27px;
+    background: rgba(217, 217, 217, 0.30);  
+}
+
+#temps{
+    flex-direction: row;
+}
+
+span{
+    color: #540505;
+    text-align: center;
+    font-size: 28px;
+    font-family: Inter;
+    font-weight: 600;
+    margin: 0;
+}
+
+p{
+    color: #540505;
+    text-align: center;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 600;
+    margin: 0;
+}
+
+#icone-warning{
+    margin-top: 37px;
+    margin-left: 21px;
+}
+
+/*----------ACCORDEON---------*/
+
+button{
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+    background: #460B0B;
+    margin-left: 168px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.bouton{
+    width: 480px;
+    height: 297px;
+    background-color: #D9D9D94D;
+    margin-top: 63px;
+    border-radius: 17px 17px 0px 0px;
+    
+}
+
+.day{
+    width: 62.35px;
+    height: 164.76px;
+    background-color: #C6AF90;
+    border-radius: 29px;
+    display: flex;
+    flex-direction: column;
+}
+
+#day{
+    width: 56px;
+    height: 17px;
+    color: #540505;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 21px;
+    margin-left: 3px;
+}
+
+
+#eclair{
+    margin-top: 20px;
+    margin-left: 8.91px;
+
+}
+
+.temperature{
+    color: #540505;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#prevision{
+    display: flex;
+    column-gap: 14.85px;
+    margin-top: 22px;
+    transition: 0.5s;
+    height: 41.045px;
+}
+
+#forecast{
+    display:flex;
+    flex-direction: column;
+}
+
+.active{
+   display: flex; 
+   position: relative;
+    
+}
+
+.noactive{
+    position: relative;
+    display: none;
+}
+
+#footer-menu{
+    display: flex;
+    column-gap: 111px;
+    margin-left: 38px;
+    margin-top: 8px;
+}
+
+
+}
