@@ -149,6 +149,7 @@ button{
 
 #prevision{
     display: flex;
+    flex-direction: column;
     column-gap: 14.85px;
     margin-top: 22px;
     transition: 0.5s;
@@ -157,7 +158,7 @@ button{
 
 #forecast{
     display:flex;
-    flex-direction: column;
+   
 }
 
 .active{
