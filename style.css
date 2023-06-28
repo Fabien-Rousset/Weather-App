@@ -148,9 +148,8 @@ button{
 }
 
 #prevision{
-    display: flex;
-    flex-direction: column;
-    column-gap: 14.85px;
+    
+ 
     margin-top: 22px;
     transition: 0.5s;
     height: 41.045px;
@@ -158,6 +157,7 @@ button{
 
 #forecast{
     display:flex;
+       column-gap: 14.85px;
    
 }
 
@@ -173,7 +173,8 @@ button{
 }
 
 #footer-menu{
-    display: flex;
+
+    position: relative;
     column-gap: 111px;
     margin-left: 38px;
     margin-top: 8px;
