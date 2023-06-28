@@ -1,0 +1,140 @@
+@media screen and (max-width: 480px){
+
+    body{
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 430px;
+        height: 932px;
+        background: url(images-favoris/bg-Favoris.png);
+    }
+
+    #bare-retour{
+        margin-top: 4.0625rem;
+    }
+
+
+    /*-------------bare de recherche--------*/
+    
+    #recherche{
+        display: flex;
+        width: 386px;
+        height: 89px;
+        border-radius: 1.5625rem;
+        background: rgba(0, 0, 0, 0.4);
+        margin-top: 1.75rem;
+        opacity: 1;
+    }
+
+    #loupe{
+        margin-top: 2.0625rem;
+        margin-left: 0.75rem;
+    }
+
+    #city{
+        color: #EEDC3C;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-left: 0.25rem;
+    }
+
+    #microphone{
+        margin-top: 1.75rem;
+        margin-left: 15rem; 
+    }
+
+
+    /*---------------------------*/
+
+    #position-actuelle{
+        display: flex;
+        width: 370px;
+        height: 141.509px;
+        background-color:rgba(0, 0, 0, 0.4);
+        color: #EEDC3C;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.50);
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 4.75rem;
+        margin-left: 7px;
+        border-radius: 1.9375rem;
+    }
+
+    .position-actuelle {
+        margin-top: 2.5rem;
+        margin-left: 1rem;
+        margin-bottom: 0;
+    }
+
+   
+
+    .ville{
+        margin-top: 0;
+        margin-left: 1rem;
+        margin-bottom: 0;
+    }
+
+    .villeActuelle{
+        margin-left: 1rem;
+        margin-bottom: 0;
+    }
+
+    .minimum{
+        display: flex;
+        color: #EEDC3C;
+        text-align: center;
+        text-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-top: 3px;
+        margin-left: 1rem;
+    }
+
+    p{
+        margin-top: 0.5rem;
+    }
+
+    .favoris{
+        display: flex;
+    }
+
+    .temperature{
+        color: #EEDC3C;
+        font-size: 48px;
+        font-weight: 600;
+        margin-left: 3rem;
+        margin-top: 2.625rem;
+    }
+
+
+    .info{
+        display: flex;
+        flex-direction: column; 
+        width: 220px;
+    }
+
+    .favoris{
+        width: 370px;
+        height: 141.509px;
+        background-color:rgba(0, 0, 0, 0.4);
+        border-radius: 1.9375rem;
+        margin-top: 2.625rem;
+    }
+
+    .ville{
+        color: #EEDC3C;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.50);
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 2.625rem;
+        margin-bottom: 0;
+    }
+
+
+
+
+
+
+}
