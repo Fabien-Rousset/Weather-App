@@ -1,0 +1,73 @@
+
+@media screen and (max-width: 430px){
+
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(images/BG-Random.png);
+}
+
+#barre-retour{
+    margin-top: 4.125rem;
+    margin-left: 1.875rem;
+}
+
+#orage{
+    display: flex;
+    width: 370px;
+    height: 151.105px;
+    border-radius: 31px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%);
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.40) inset, 0px 30px 20px 0px rgba(0, 0, 0, 0.40);
+    margin-top: 3.4375rem;
+    margin-left: 1.5938rem;
+}
+
+#orage-gauche{
+    display: flex;
+    flex-direction: column;
+}
+
+.temperature{
+    color: #E19AFA;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 1.6338rem;
+    margin-left: 2.625rem;
+    margin-bottom: 0;
+}
+
+.min-max, .city{
+    color: #E19AFA;
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-left: 2.0938rem;
+    padding: 0;
+}
+
+#icone-orage, #icone-pluie-orage, #icone-meteore{
+    margin-top: 2.4388rem;
+    margin-left: 30px;
+}
+
+#tempete, #pluie-orage, #meteore{
+    display: flex;
+    width: 370px;
+    height: 151.105px;
+    border-radius: 31px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%);
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.40) inset, 0px 30px 20px 0px rgba(0, 0, 0, 0.40);
+    margin-top: 3.4375rem;
+    margin-left: 1.5938rem;
+}
+
+}
