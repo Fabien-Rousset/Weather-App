@@ -14,10 +14,11 @@ let accordion = document.getElementById("bouton");
  */
     let menuNuage = document.getElementById('menu-nuage');
 
-    menuNuage.addEventListener('click', openWindow)
+    menuNuage.addEventListener('click', openWindow);
 
     function openWindow(){
         fenetre = window.open("/Favoris/favoris2.html", "_self");
+        console.log(openWindow);
     }
 
 
