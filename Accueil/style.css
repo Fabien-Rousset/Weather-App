@@ -150,12 +150,15 @@ button{
 #prevision{
     margin-top: 1.375rem;
     transition: 0.5s;
-    height: 41.045px;
+  
 }
 
 #forecast{
+    width: 100%;
+    height: 167px;
     display:flex;
     column-gap: 0.9281rem;
+    overflow: scroll;
 }
 
 .active{

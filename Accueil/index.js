@@ -17,7 +17,7 @@ let accordion = document.getElementById("bouton");
     menuNuage.addEventListener('click', openWindowRandom);
 
     function openWindowRandom(){
-        fenetre = window.open("/Favoris/favoris2.html", "_self");
+        fenetre = window.open("/Random/random.html", "_self");
         console.log(openWindow);
     }
 
@@ -32,6 +32,6 @@ let accordion = document.getElementById("bouton");
 		menuTete.addEventListener("click", openWindowFavoris);
 
 		function openWindowFavoris() {
-			fenetre = window.open("/Random/random2.html", "_self");
+			fenetre = window.open("/Favoris/favoris.html", "_self");
 		}
 
