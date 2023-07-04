@@ -1,148 +1,73 @@
-@media screen and (max-width: 390px){
 
-    body{
-        font-family: 'Inter', sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        width: 390px;
-        height: 932px;
-        background: url(images-random/bg-Favoris.png);
-    }
-
-    #barre-retour{
-        margin-top: 4.0625rem;
-    }
+@media screen and (max-width: 430px){
 
 
-    /*-------------bare de recherche--------*/
-    
-    #recherche{
-        display: flex;
-        width: 386px;
-        height: 89px;
-        border-radius: 1.5625rem;
-        background: rgba(0, 0, 0, 0.4);
-        margin-top: 1.75rem;
-        opacity: 1;
-    }
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(images/BG-Random.png);
+}
 
-    #loupe{
-        margin-top: 2.0625rem;
-        margin-left: 0.75rem;
-    }
+#barre-retour{
+    margin-top: 4.125rem;
+    margin-left: 1.875rem;
+}
 
-    #city{
-        color: #EEDC3C;
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-top: 2rem;
-        margin-left: 0.25rem;
-    }
+#orage{
+    display: flex;
+    width: 370px;
+    height: 151.105px;
+    border-radius: 31px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%);
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.40) inset, 0px 30px 20px 0px rgba(0, 0, 0, 0.40);
+    margin-top: 3.4375rem;
+    margin-left: 1.5938rem;
+}
 
-    #microphone{
-        margin-top: 1.75rem;
-        margin-left: 140px; 
-    }
+#orage-gauche{
+    display: flex;
+    flex-direction: column;
+}
 
+.temperature{
+    color: #E19AFA;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 1.6338rem;
+    margin-left: 2.625rem;
+    margin-bottom: 0;
+}
 
-    /*---------------------------*/
+.min-max, .city{
+    color: #E19AFA;
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-left: 2.0938rem;
+    padding: 0;
+}
 
-    #position-actuelle{
-        display: flex;
-        width: 370px;
-        height: 141.509px;
-        background-color:rgba(0, 0, 0, 0.4);
-        color: #EEDC3C;
-        text-shadow: 2px 2px rgba(0, 0, 0, 0.50);
-        font-size: 1.25rem;
-        font-weight: 600;
-        margin-top: 4.75rem;
-        margin-left: 0.4375rem;
-        border-radius: 1.9375rem;
-    }
+#icone-orage, #icone-pluie-orage, #icone-meteore{
+    margin-top: 2.4388rem;
+    margin-left: 30px;
+}
 
-    .position-actuelle {
-        margin-top: 2.5rem;
-        margin-left: 1rem;
-        margin-bottom: 0;
-    }
+#tempete, #pluie-orage, #meteore{
+    display: flex;
+    width: 370px;
+    height: 151.105px;
+    border-radius: 31px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%);
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.40) inset, 0px 30px 20px 0px rgba(0, 0, 0, 0.40);
+    margin-top: 3.4375rem;
+    margin-left: 1.5938rem;
+}
 
-   
-
-    .ville{
-        margin-top: 0;
-        margin-left: 1rem;
-        margin-bottom: 0;
-    }
-
-    input{
-        width: 220px;
-        background: transparent;
-        opacity: 1;
-        color: #EEDC3C;
-        text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
-        font-size: 1.5rem;
-        font-weight: 600;
-        border: none;
-        margin-left: 10px;
-        text-align: center;
-        outline: none;
-    }
-
-    .villeActuelle{
-        margin-left: 1rem;
-        margin-bottom: 0;
-    }
-
-    .minimum{
-        display: flex;
-        color: #EEDC3C;
-        text-align: center;
-        text-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
-        font-size: 0.875rem;
-        font-weight: 600;
-        margin-top: 0.1875rem;
-        margin-left: 1rem;
-    }
-
-    p{
-        margin-top: 0.5rem;
-    }
-
-    .favoris{
-        display: flex;
-    }
-
-    .temperature{
-        color: #EEDC3C;
-        font-size: 48px;
-        font-weight: 600;
-        margin-left: 3rem;
-        margin-top: 2.625rem;
-    }
-
-    .info{
-        display: flex;
-        flex-direction: column; 
-        width: 220px;
-    }
-
-    .favoris{
-        width: 370px;
-        height: 141.509px;
-        background-color:rgba(0, 0, 0, 0.4);
-        border-radius: 1.9375rem;
-        margin-top: 2.625rem;
-        margin-left: 0.4375rem;
-    }
-
-    .ville{
-        color: #EEDC3C;
-        text-shadow: 2px 2px rgba(0, 0, 0, 0.50);
-        font-size: 1.25rem;
-        font-weight: 600;
-        margin-top: 2.625rem;
-        margin-bottom: 0;
-    }
 }

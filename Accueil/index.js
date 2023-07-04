@@ -1,12 +1,12 @@
-let accordion = document.getElementById("bouton");
+// let accordion = document.getElementById("bouton");
 
  
-	accordion.addEventListener("click", function () {
-        console.log("prevision")
-        let prevision = document.getElementById('prevision');
-		prevision.classList.toggle("active");
-        prevision.classList.toggle("noactive");
-	});
+// 	accordion.addEventListener("click", function () {
+//         console.log("prevision")
+//         let prevision = document.getElementById('prevision');
+// 		prevision.classList.toggle("active");
+//         prevision.classList.toggle("noactive");
+// 	});
 
 /**
  *          Ouverture de la page Random depuis "menu nuage"
