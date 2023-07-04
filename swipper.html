@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+  body html{
+    width: 380px;
+  }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      height: 250px;
+      margin-bottom: 0;
+    }
+
+    .swiper-slide-active{
+      margin: 0;
+    }
+
+   
+#flash{
+    width: 348px;
+    height: 169px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.8575rem;
+    margin-left: 20px;
+    border-radius: 1.6875rem;
+    background: rgba(217, 217, 217, 0.30);  
+}
+
+#temps{
+    flex-direction: row;
+}
+
+span{
+    color: #540505;
+    text-align: center;
+    font-size: 1.75rem;
+    font-family: Inter;
+    font-weight: 600;
+    margin: 0;
+}
+
+p{
+    color: #540505;
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: Inter;
+    font-weight: 600;
+    margin: 0;
+}
+
+#icone-warning{
+    margin-top: 2.3125rem;
+    margin-left: 1.3125rem;
+}
+
+/*----------ACCORDEON---------*/
+
+button{
+    width: 100px;
+    height: 20px;
+    border-radius: 1.25rem;
+    background: #460B0B;
+    margin-left: 150px;
+    margin-top: 0.875rem;
+    cursor: pointer;
+}
+
+.bouton{
+    width: 390px;
+    height: 297px;
+    background-color: #D9D9D94D;
+    margin-top: 3.9375rem;
+    border-radius: 1.0625rem 1.0625rem 0rem 0rem;    
+}
+
+.day{
+    width: 62.35px;
+    height: 164.76px;
+    background-color: #C6AF90;
+    border-radius: 1.8125rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#day{
+    width: 56px;
+    height: 17px;
+    color: #540505;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-top: 1.3125rem;
+    margin-left: 0.1875rem;
+}
+
+
+#eclair{
+    margin-top: 1.25rem;
+    margin-left: 0.5569rem;
+
+}
+
+.temperature{
+    color: #540505;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#prevision{
+    margin-top: 1.375rem;
+    transition: 0.5s;
+  
+}
+
+#forecast{
+    width: 100%;
+    height: 167px;
+    display:flex;
+    column-gap: 0.9281rem;
+    overflow: scroll;
+}
+
+
+
+#footer-menu{
+    display: flex;
+    position: relative;
+    column-gap: 6.9375rem;
+    margin-left: 2.375rem;
+    margin-top: 0.5rem;
+}
+
+    .swiper-v {
+      background: #eee;
+    }
+
+  
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+
+  <div class="swiper mySwiper swiper-h">
+    <div class="swiper-wrapper">
+ 
+      <div class="swiper-slide">
+        <div class="swiper mySwiper2 swiper-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div id="flash">
+                      <div id="temps">
+                        <img id="icone-warning" src="warning.png" width="50.75" height="45.56" alt="icone warning/attention" >
+                        <span> &nbsp; Intempéries</span>
+                      </div>
+                    <p>Avertissement - Orage jusqu'à 00.00</p>
+                    but
+              </div>
+              <button type="button" id="bouton-haut"></button>
+            </div>
+            <div class="swiper-slide">
+              <div class="bouton" >
+        <button type="button" id="bouton"></button>
+    
+
+        <div id="prevision">
+            <div id="forecast">
+
+                    <div class="day">
+                        <p id="day">AUJ'</p>
+                        <img id="eclair" src="icone-parapluie.png" width="43.99" height="48.86"  alt="icone parapluie">
+                        <p class="temperature">27°</p>
+                    </div>
+
+                    <div class="day">
+                        <p id="day">12 NOV</p>
+                        <img id="eclair" src="🦆 icon _Road weather_.png" width="43.99" height="48.86"  alt="icone voiture glissante">
+                        <p class="temperature">31°</p>
+                    </div>
+
+                    <div class="day">
+                        <p id="day">13 NOV</p>
+                        <img id="eclair" src="icone-squelette.png" width="43.99" height="48.86" alt="icone squelette en feu">
+                        <p class="temperature">39°</p>
+                    </div>
+
+                    <div class="day">
+                        <p id="day">14 NOV</p>
+                        <img id="eclair" src="🦆 icon _Road weather_.png" width="43.99" height="48.86" alt="icone voiture glissante">
+                        <p class="temperature">27°</p>
+                    </div>
+
+                    <div class="day">
+                        <p id="day">15 NOV</p>
+                        <img id="eclair" src="🦆 icon _Road weather_.png" width="43.99" height="48.86" alt="icone voiture glissante">
+                        <p class="temperature">27°</p>
+                    </div>
+
+                    <div class="day">
+                        <p id="day">16 NOV</p>
+                        <img id="eclair" src="icone-orage.png" width="43.99" height="48.86" alt="icone orage">
+                        <p class="temperature">27°</p>
+                    </div>
+
+                    <div class="day">
+                        <p id="day">17 NOV</p>
+                        <img id="eclair" src="🦆 icon _Road weather_.png" width="43.99" height="48.86" alt="icone voiture glissante">
+                        <p class="temperature">28°</p>
+                    </div>
+
+                    <div class="day">
+                        <p id="day">18 NOV</p>
+                        <img id="eclair" src="icone-pluie.png" width="43.99" height="48.86" alt="icone pluie">
+                        <p class="temperature">24°</p>
+                    </div>
+
+                    <div class="day">
+                        <p id="day">19 NOV</p>
+                        <img id="eclair" src="icone-squelette.png" width="43.99" height="48.86" alt="icone squelette en feu">
+                        <p class="temperature">38°</p>
+                    </div>
+            </div>
+                <div id="footer-menu">
+                     <img id="menu-nuage" src="menu-nuage.png" width="43.96" height="41.05" alt="menu nuage">
+                    <img src="menu-rond.png" width="50.49" height="50" alt="menu rond">
+                    <img id="menu-tete" src="menu-tete-de-mort.png" width="42.97" height="44.58" alt="menu tete de mort">
+                </div>
+
+         
+        </div>
+</div>
+            </div>
+           
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 50,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      direction: "vertical",
+      spaceBetween: 50,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

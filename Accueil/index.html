@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Weather App</title>
 </head>
@@ -21,19 +22,28 @@
     
 
 
-    <div id="flash">
-        <div id="temps">
-            <img id="icone-warning" src="images/warning.png" width="50.75" height="45.56" alt="icone warning/attention" >
-            <span> &nbsp; Intempéries</span>
-        </div>
-         <p>Avertissement - Orage jusqu'à 00.00</p>
-    </div>
-
-    <div class="bouton" >
-        <button type="button" id="bouton"></button>
+      <div class="swiper mySwiper swiper-h">
+    <div class="swiper-wrapper">
+ 
+      <div class="swiper-slide">
+        <div class="swiper mySwiper2 swiper-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div id="flash">
+                      <div id="temps">
+                        <img id="icone-warning" src="images/warning.png" width="50.75" height="45.56" alt="icone warning/attention" >
+                        <span> &nbsp; Intempéries</span>
+                      </div>
+                    <p>Avertissement - Orage jusqu'à 00.00</p>
+                    
+              </div>
+              <button type="button" id="bouton-haut"></button>
+            </div>
+            <div class="swiper-slide">
+       
     
 
-        <div id="prevision" class="noactive">
+        <div id="prevision">
             <div id="forecast">
 
                     <div class="day">
@@ -98,9 +108,41 @@
 
          
         </div>
-</div>
+        </div>
+            </div>
+           
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+    </div>
+      
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 50,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      direction: "vertical",
+      spaceBetween: 50,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
     
 <script src="index.js"></script>
+
 </body>
 </html>

@@ -181,4 +181,19 @@ button{
     margin-top: 0.5rem;
 }
 
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      height: 250px;
+      margin-bottom: 0;
+    }
+
+    .swiper-slide-active{
+      margin: 0;
+    }
+
 }
