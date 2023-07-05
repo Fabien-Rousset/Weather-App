@@ -60,15 +60,20 @@
         margin-top: 4.75rem;
         margin-left: 0.4375rem;
         border-radius: 1.9375rem;
+
     }
 
-    .position-actuelle {
+    #position-actuelle {
         margin-top: 2.5rem;
-        margin-left: 1rem;
+        margin-left: 0.5rem;
         margin-bottom: 0;
     }
 
-   
+   #bouton-favoris{
+    position: relative;
+    top: 89px;
+    left: 324px;
+   }
 
     .ville{
         margin-top: 0;
@@ -90,12 +95,18 @@
         outline: none;
     }
 
-    .villeActuelle{
+    #villeActuelle{
+        color: #EEDC3C;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.50);
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 2.625rem;
+        margin-bottom: 0;
         margin-left: 1rem;
         margin-bottom: 0;
     }
 
-    .minimum{
+    .minimum, #temp-min, #temp-max{
         display: flex;
         color: #EEDC3C;
         text-align: center;
@@ -103,7 +114,7 @@
         font-size: 0.875rem;
         font-weight: 600;
         margin-top: 0.1875rem;
-        margin-left: 1rem;
+        margin-left: 6px;
     }
 
     p{
@@ -114,7 +125,7 @@
         display: flex;
     }
 
-    .temperature{
+    .temperature, #temperature{
         color: #EEDC3C;
         font-size: 48px;
         font-weight: 600;

@@ -14,32 +14,35 @@
 
 <div id="recherche">
     <img id="loupe" src="images/🦆 icon _Search_.png" width="29" height="28" alt="image d'une loupe" >
-    <p id="city">Ville:</p><input type="search" name="ville">
+    <p id="city">Ville:</p><input id="appel_api" type="search" name="ville" value="appel-api" >
     <img id="microphone" src="images/🦆 icon _music microphone.png" width="17" height="32.94" alt="image icone microphone">
 </div>
 
 <div id="favoris">
 
 
-
+<img id="bouton-favoris" src="images/icone-hallowen.png" width="40" height="40" alt="">
     <div id="position-actuelle">
+        
         <div class="info">
-            <p class="position-actuelle">Ma position</p>
-            <p class="villeActuelle">Besancon</p>
+            
+            <p id="villeActuelle">Besancon</p>
             <div class="minimum">
-                <p>Mini 18°</p>
-                <p>/ Max 29°</p>
+                  <p id="temp-min"> Mini 14°</p>
+                    <p id="temp-max">/ Max 27°</p>
+                    
             </div>
         </div>
-        <p class="temperature">27°</p>
+        <p Id="temperature">27°</p>
     </div>
 
     <div class="favoris">
         <div class="info">
             <p class="ville">Montceau-les-Mines</p>
             <div class="minimum">
-                <p> Mini 14°</p>
-                <p>/ Max 27°</p>
+              <p>Mini 18°</p>
+                
+                  <p>/ Max 29°</p>
             </div>
         </div>
         
@@ -79,6 +82,7 @@
 
 
 <script src="favoris.js"></script> 
+<script src="../parametres.js"></script>
 
 </body>
 </html>
