@@ -71,8 +71,9 @@
 
    #bouton-favoris{
     position: relative;
-    top: 89px;
-    left: 324px;
+    top: 6px;
+    left: 61px;
+    border-radius: 50%;
    }
 
     .ville{
@@ -125,13 +126,21 @@
         display: flex;
     }
 
-    .temperature, #temperature{
+    .temperature{
         color: #EEDC3C;
         font-size: 48px;
         font-weight: 600;
         margin-left: 3rem;
         margin-top: 2.625rem;
     }
+
+    #temperature{
+        color: #EEDC3C;
+        font-size: 48px;
+        font-weight: 600;
+        margin-left: 50px;
+    }
+
 
     .info{
         display: flex;
