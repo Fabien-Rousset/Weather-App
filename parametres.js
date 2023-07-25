@@ -30,12 +30,21 @@ const apiKey = "79937de35840113f46750d7bb8a9171a";
 			historique = JSON.parse(historique);
 		}
 
-        historique.unshift(nomVille.innerHTML);
-        monStockage.setItem("historique", JSON.stringify(historique));
+  //       historique.unshift(nomVille.innerHTML);
+  //       monStockage.setItem("historique", JSON.stringify(historique));
 
-  console.log(historique);
+  // console.log(historique);
+  historique.push({
+        ville: meteo.name,
+        temperature: `${Math.round(meteo.main.temp)}°`,
+        tempMin: `Min ${Math.round(meteo.main.temp_min)}°`,
+        tempMax: `Max ${Math.round(meteo.main.temp_max)}°`
+    });
 
+    monStockage.setItem("historique", JSON.stringify(historique));
 }
+
+
 
 
 //--------------------------------------------------------------
@@ -43,8 +52,12 @@ const apiKey = "79937de35840113f46750d7bb8a9171a";
 let boutonFavoris = document.getElementById("bouton-favoris");
 let cloneDiv = document.getElementById("position-actuelle");
 
-function cloneUnderneath(){
-    
+function cloneUnderneath(e){
+    let newDiv = document.createElement("div");
+		let clonedDiv2 = cloneDiv.cloneNode(true);
+		newDiv.appendChild(clonedDiv2);
+		cloneDiv.parentNode.appendChild(newDiv);
+    e.preventDefault(); 
 }
 
 
@@ -69,6 +82,16 @@ boutonFavoris.addEventListener("click", cloneUnderneath)
 
 })});
 
+const cityJson = city.list.json
+
+
+    fetch(cityJson)
+        .then(response => response.json())
+        .then((data) => {console.log(data);
+            
+        renduMeteo()
+        }
+        )
 
 // BOUTON FAVORIS
 
