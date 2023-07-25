@@ -1,6 +1,7 @@
 const apiKey = "79937de35840113f46750d7bb8a9171a";
 
-
+let boutonFavoris = document.getElementById("bouton-favoris");
+let cloneDiv = document.getElementById("position-actuelle");
 
 
  function renduMeteo(meteo){
@@ -22,7 +23,7 @@ const apiKey = "79937de35840113f46750d7bb8a9171a";
 
     let monStockage = localStorage;
     
-    let historique = monStockage.getItem("historique");
+    let historique = monStockage.getItem("historique",);
 
       if (historique === null) {
 			historique = [];
@@ -44,13 +45,7 @@ const apiKey = "79937de35840113f46750d7bb8a9171a";
     monStockage.setItem("historique", JSON.stringify(historique));
 }
 
-
-
-
 //--------------------------------------------------------------
-
-let boutonFavoris = document.getElementById("bouton-favoris");
-let cloneDiv = document.getElementById("position-actuelle");
 
 function cloneUnderneath(e){
     let newDiv = document.createElement("div");
@@ -63,6 +58,8 @@ function cloneUnderneath(e){
 
 boutonFavoris.addEventListener("mouseover", function(){this.style.backgroundColor = "orange"})
 boutonFavoris.addEventListener("click", cloneUnderneath)
+
+
 
 //----------------------------------------------------------------------//
 
@@ -82,35 +79,18 @@ boutonFavoris.addEventListener("click", cloneUnderneath)
 
 })});
 
-const cityJson = city.list.json
+// const cityJson = city.list.json
 
 
-    fetch(cityJson)
-        .then(response => response.json())
-        .then((data) => {console.log(data);
+//     fetch(cityJson)
+//         .then(response => response.json())
+//         .then((data) => {console.log(data);
             
-        renduMeteo()
-        }
-        )
-
-// BOUTON FAVORIS
-
-// let reponseOk = function(data){
-    
-//     console.log(data)
-//     alert(data.main.temp)
-// }
+//         renduMeteo()
+//         }
+//         )
 
 
-// function coordonnees(pos) {
-//     let crd = pos.coords;
-  
-//     let latitude = crd.latitude;
-//     let longitude = crd.longitude;
-// }
-
-// let positionActuelle = navigator.geolocation.getCurrentPosition(coordonnees)
-// console.log(positionActuelle)
 
 
 
