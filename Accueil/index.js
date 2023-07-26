@@ -32,6 +32,6 @@
 		menuTete.addEventListener("click", openWindowFavoris);
 
 		function openWindowFavoris() {
-			fenetre = window.open("/Favoris/favoris.html", "_self");
+			fenetre = window.open("../weatherapp/favoris.html", "_self");
 		}
 
